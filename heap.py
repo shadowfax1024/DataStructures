@@ -1,9 +1,7 @@
 def max_heapify(A,i):
-    print("----IN MAX HEAPIFY---",A,i)
     length = len(A)
     left = 2*i + 1
     right = 2*i + 2
-    print("left_right",left,right)
     largest = -10000
     if ((left <length) and (A[left] > A[i])):
         largest= left
@@ -18,7 +16,6 @@ def max_heapify(A,i):
         max_heapify(A,largest)
     return A
 def max_heapify2(A,i,length):
-    print("----IN MAX HEAPIFY---",A,i)
     #length = len(A)
     left = 2*i + 1
     right = 2*i + 2
